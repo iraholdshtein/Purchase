@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Закупки</title>
 </head>
-<form action="/" metod="GET">
 <body>
-
+    <div>
+         <form action="/Form-processor.php" metod="POST">
+    </div>
+    <div>
+        <label>subject:</label>
+        <input type="text" name="subject"/>
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" name="user-password">
+    </div>
+    <div>
+        <label>body:</label>
+        <textarea name="body"></textarea>
+    </div> 
+    <div>   
+        <button type="submit">Submit</button>  
+        <button type="reset">Clear</button>
+    </div>    
     </form>
 </body>
 </html>
