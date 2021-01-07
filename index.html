@@ -6,25 +6,61 @@
     <title>Закупки</title>
 </head>
 <body>
+<section 1>
+    <h2 > <a href="https://tavriav.ua"> Продовольственные товары </a> </h2>
+    <ul>
+       <li>Молочные продукты</li> 
+       <li>Овощи</li>
+       <li>Фрукты</li>
+       <li>Кондитерские изделия</li>
+    </ul>
+</section 1>      
+<section>
+    <h2><a href="https://rozetka.com.ua"> Промышленные товары </a></h2>
+    <ul>
+        <li>Электро-товары</li> 
+        <li>Ювелирные товары</li>
+        <li>Хозяйственные товары</li>
+        <li>Одежно-обувные товары</li>
+    </ul>
+</section>
+
     <div>
-         <form action="/Form-processor.php" metod="POST">
+        <label>Выбор категории:</label>
+    <form action="" method="get"></form>    
     </div>
     <div>
-        <label>subject:</label>
-        <input type="text" name="subject"/>
-    </div>
-    <div>
-        <label>Password:</label>
-        <input type="password" name="user-password">
-    </div>
-    <div>
-        <label>body:</label>
-        <textarea name="body"></textarea>
+        <label><input type="radio" checked name="категория" id="id1" value="Продовольственные товары"/> Продовольственные товары </label> 
+        <label><input type="radio" name="категория" id="id2" value="Промышленные товары" /> Промышленные товары</label>
+<br>
+
+<label for="id1"></label> <select name="категория" id="id1" value="Продовольственные товары"></section></label>
+    <option value="Продовольственные">Молочные продукты</option>
+    <option value="Продовольственные">Овощи</option>
+    <option value="Продовольственные">Фрукты</option>
+    <option value="Продовольственные">Кондитерские изделия</option>
+    <option hidden="" disabled="" selected="">Choose one</option>
+</select>
+<br>
+<label for="id2"></label> <select name="категория" id="id2" value="Промышленные товары"></section></label>
+    <option value="Промышленные">Электро-товары</option>
+    <option value="Промышленные">Ювелирные товары</option>
+    <option value="Промышленные">Хозяйственные товары</option>
+    <option value="Промышленные">Одежно-обувные товары</option>
+    <option hidden="" disabled="" selected="">Choose one</option>
+</select>
+    <label for="id1">    
+       
+    </label>    
+    <label for="id2">
+        
+    </label>
+    <label for="agree">    
+        <input type="checkbox" name="agree"/>
+        I agree
     </div> 
-    <div>   
-        <button type="submit">Submit</button>  
-        <button type="reset">Clear</button>
-    </div>    
+        <button type="submit">Submit </button>  
+        <button type="reset">Clear</button> 
     </form>
 </body>
 </html>
